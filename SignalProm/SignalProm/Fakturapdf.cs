@@ -27,18 +27,18 @@ namespace SignalProm
     {
 
 
-        private static String[] units = {"nula","jedna","dve","tri","četiri","pet","šest","sedam","osam","devet","deset","jedanaest","dvanaest","trinaest","četrnaest","petnaest","šesnaest","sedamnaest","osamnaest","devetnaest"};
-        private static String[] tens = {"","","dvadeset","trideset","četrdeset","pedeset","šezdeset","sedamdeset","osamdeset","devedeset" };
+        private static String[] units = { "nula", "jedna", "dve", "tri", "četiri", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest" };
+        private static String[] tens = { "", "", "dvadeset", "trideset", "četrdeset", "pedeset", "šezdeset", "sedamdeset", "osamdeset", "devedeset" };
         List<klijentSkr> lista2;
         public Fakturapdf(object sender)
         {
-            
+
             InitializeComponent();
-            lista2 = (List < klijentSkr >) sender;
+            lista2 = (List<klijentSkr>)sender;
         }
 
 
-       
+
         public static string SetValueForText1 = "";
         public static string SetValueForText2 = "";
         public static string SetValueForText3 = "";
@@ -46,7 +46,7 @@ namespace SignalProm
         public static string jedmere = "";
         public static string kol = "";
         public static string cena = "";
-        
+
 
         private void label8_Click(object sender, EventArgs e)
         {
@@ -71,7 +71,7 @@ namespace SignalProm
             brUgovoraDatum.Text = KlijentAddUslugeForm.ugovorNarudzbenice;
 
 
-         
+
 
 
 
@@ -86,12 +86,12 @@ namespace SignalProm
             qwe.Columns.Add("UKUPNO BEZ PDV-a");
             qwe.Columns.Add("CIJENA SA PDV-om");
             qwe.Columns.Add("Ukupan iznos sa PDV-om");
-            for (var i = 0;  i< lista2.Count ; i++)
+            for (var i = 0; i < lista2.Count; i++)
             {
                 var cena1 = (double.Parse(lista2[i].cena) * double.Parse(lista2[i].kol)).ToString("0.00") + '\n';
                 var cena2 = (double.Parse(cena1) * 17 / 100).ToString("0.00") + '\n';
                 var cena3 = (double.Parse(cena2) + double.Parse(cena1)).ToString("0.00") + '\n';
-               
+
                 DataRow _ravi = qwe.NewRow();
                 _ravi["BR"] = (i + 1).ToString();
                 _ravi["USLUGA"] = lista2[i].usluga.Trim();
@@ -101,16 +101,16 @@ namespace SignalProm
                 _ravi["UKUPNO BEZ PDV-a"] = cena1;
                 _ravi["CIJENA SA PDV-om"] = cena2;
                 _ravi["Ukupan iznos sa PDV-om"] = cena3;
-            
+
                 qwe.Rows.Add(_ravi);
-               
+
 
             }
             dataGridView1.DataSource = qwe;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.AllowUserToAddRows = false;
-            
+
 
             foreach (DataGridViewRow dt in dataGridView1.Rows)
             {
@@ -118,7 +118,7 @@ namespace SignalProm
                 sumasaPDV += double.Parse(dt.Cells[7].Value.ToString());
                 PDV += double.Parse(dt.Cells[6].Value.ToString());
             }
-           
+
             label45.Text = sumabezPDV.ToString();
             label47.Text = PDV.ToString();
             label48.Text = sumasaPDV.ToString();
@@ -127,15 +127,18 @@ namespace SignalProm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length == 0) {
+            if (textBox1.Text.Length == 0)
+            {
                 MessageBox.Show("Morate upisati ukupan iznos slovima!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else {
-                slovimaBroj = textBox1.Text;
-            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "PDF file|*.pdf", ValidateNames = true })
+            else
             {
-                if (sfd.ShowDialog() == DialogResult.OK) {
-                    iTextSharp.text.Document doc = new iTextSharp.text.Document(iTextSharp.text.PageSize.A4) ;
+                slovimaBroj = textBox1.Text;
+                using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "PDF file|*.pdf", ValidateNames = true })
+                {
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        iTextSharp.text.Document doc = new iTextSharp.text.Document(iTextSharp.text.PageSize.A4);
                         try
                         {
                             PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
@@ -636,18 +639,19 @@ namespace SignalProm
                             d2.AddCell(cdd2);
 
                             doc.Add(d2);
-                       
 
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Poruka", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        finally
+                        {
+                            doc.Close();
+                        }
                     }
-                    catch (Exception ex) {
-                        MessageBox.Show(ex.Message, "Poruka", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    finally
-                    {
-                        doc.Close();
-                    }
-                    }
-                }  
+                }
             }
         }
 
@@ -666,65 +670,6 @@ namespace SignalProm
 
         }
 
-        public static String ConvertAmount(double amount)
-        {
-            try
-            {
-                Int64 amount_int = (Int64)amount;
-                Int64 amount_dec = (Int64)Math.Round((amount - (double)(amount_int)) * 100);
-                if (amount_dec == 0)
-                {
-                    return Convert(amount_int) + " Only.";
-                }
-                else
-                {
-                    string[] poszar = amount.ToString().Split('.');
-                    if (double.Parse(poszar[1]) < 10) {
-                        poszar[1] = '0' + poszar[1]; 
-                    }
-                    return Convert(amount_int) + " i " + poszar[1] + "/100";
-                }
-            }
-            catch (Exception e)
-            {
-                // TODO: handle exception  
-            }
-            return "";
-        }
-
-        public static String Convert(Int64 i)
-        {
-            if (i < 20)
-            {
-                return units[i];
-            }
-            if (i < 100)
-            {
-                return tens[i / 10] + ((i % 10 > 0) ? " " + Convert(i % 10) : "");
-            }
-            if (i < 1000)
-            {
-                return units[i / 100] + "sto"
-                        + ((i % 100 > 0) ? "" + Convert(i % 100) : "");
-            }
-            if (i < 100000)
-            {
-                return Convert(i / 1000) + "hiljada"
-                        + ((i % 1000 > 0) ? "" + Convert(i % 1000) : "");
-            }
-            if (i < 10000000)
-            {
-                return Convert(i / 100000) + "stoljihada"
-                        + ((i % 100000 > 0) ? "" + Convert(i % 100000) : "");
-            }
-            if (i < 1000000000)
-            {
-                return Convert(i / 10000000) + " Crore "
-                        + ((i % 10000000 > 0) ? "" + Convert(i % 10000000) : "");
-            }
-            return Convert(i / 1000000000) + " Arab "
-                    + ((i % 1000000000 > 0) ? "" + Convert(i % 1000000000) : "");
-        }
     }
 }
 

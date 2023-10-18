@@ -23,7 +23,7 @@ namespace SignalProm
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-7PH5CRCR\\SQLEXPRESS;Initial Catalog=signalprom;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
             SqlCommand cmd = new SqlCommand("SELECT imeKlijent,adresaKlijent,PIBKlijent,racunKlijent,telKlijent,faksKlijent FROM klijent", con);
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
@@ -46,7 +46,7 @@ namespace SignalProm
 
         public  void MyCodes(object sender,FormClosingEventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-7PH5CRCR\\SQLEXPRESS;Initial Catalog=signalprom;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
             SqlCommand cmd = new SqlCommand("SELECT imeKlijent,adresaKlijent,PIBKlijent,racunKlijent,telKlijent,faksKlijent FROM klijent", con);
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;

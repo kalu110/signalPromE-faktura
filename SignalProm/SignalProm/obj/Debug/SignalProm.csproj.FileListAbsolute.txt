@@ -74,3 +74,5 @@ C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.Co
 C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.CopyComplete
 C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.exe
 C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.pdb
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\signalprom.mdf
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\signalprom_log.ldf

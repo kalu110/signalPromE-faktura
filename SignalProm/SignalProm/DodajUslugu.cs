@@ -26,7 +26,7 @@ namespace SignalProm
             }
             else
             {
-                SqlConnection con = new SqlConnection("Data Source=LAPTOP-7PH5CRCR\\SQLEXPRESS;Initial Catalog=signalprom;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
+                SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
                 con.Open();
                 SqlCommand cmd = new SqlCommand("insert into usluga values(@nazivusluge)", con);
 
@@ -46,7 +46,7 @@ namespace SignalProm
 
         private void DodajUslugu_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-7PH5CRCR\\SQLEXPRESS;Initial Catalog=signalprom;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
             SqlCommand cmd = new SqlCommand("Select nazivUsluga from usluga", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -66,7 +66,7 @@ namespace SignalProm
 
         private void prikazUsluge_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-7PH5CRCR\\SQLEXPRESS;Initial Catalog=signalprom;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
             if (e.ColumnIndex == 1)
             {
                 DataGridViewRow row = prikazUsluge.Rows[e.RowIndex];
