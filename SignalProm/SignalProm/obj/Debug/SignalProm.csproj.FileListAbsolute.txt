@@ -1,0 +1,76 @@
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\SignalProm.exe.config
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\SignalProm.exe
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\SignalProm.pdb
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.AssemblyReference.cache
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.DodajKlijenta.resources
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.Form1.resources
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.Properties.Resources.resources
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.GenerateResource.cache
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.CoreCompileInputs.cache
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.exe
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.pdb
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.DodajUslugu.resources
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.Fakturapdf.resources
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\itextsharp.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\itextsharp.xml
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.CopyComplete
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.Api.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\System.Buffers.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\System.Memory.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.pdb
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.xml
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.Api.xml
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\System.Buffers.xml
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\System.Memory.xml
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Pc Centar 017\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.KlijentAddUslugeForm.resources
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\SignalProm.exe.config
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\SignalProm.exe
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\SignalProm.pdb
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.Api.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\itextsharp.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\System.Buffers.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\System.Memory.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.pdb
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.xml
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\Grpc.Core.Api.xml
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\itextsharp.xml
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\System.Buffers.xml
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\System.Memory.xml
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\miros\source\repos\SignalProm\SignalProm\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.AssemblyReference.cache
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.DodajKlijenta.resources
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.DodajUslugu.resources
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.Fakturapdf.resources
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.Form1.resources
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.KlijentAddUslugeForm.resources
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.Properties.Resources.resources
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.GenerateResource.cache
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.CoreCompileInputs.cache
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.csproj.CopyComplete
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.exe
+C:\Users\miros\source\repos\SignalProm\SignalProm\obj\Debug\SignalProm.pdb
