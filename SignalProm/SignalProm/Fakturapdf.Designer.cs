@@ -483,6 +483,7 @@ namespace SignalProm
             this.label45.TabIndex = 41;
             this.label45.Text = "NEMA";
             this.label45.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label45.Click += new System.EventHandler(this.label45_Click);
             // 
             // label46
             // 

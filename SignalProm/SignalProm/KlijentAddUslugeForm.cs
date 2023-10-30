@@ -90,7 +90,8 @@ namespace SignalProm
         }
         public void MyCodes(object sender, FormClosingEventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Public\\signalPromE-faktura-main\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+
             SqlCommand cmd2 = new SqlCommand("Select nazivUsluga from usluga", con);
             SqlDataAdapter da2 = new SqlDataAdapter();
             da2.SelectCommand = cmd2;
@@ -105,7 +106,7 @@ namespace SignalProm
         }
         private void KlijentAddUslugeForm_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Public\\signalPromE-faktura-main\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
             SqlCommand cmd2 = new SqlCommand("Select nazivUsluga from usluga", con);
             SqlDataAdapter da2 = new SqlDataAdapter();
             da2.SelectCommand = cmd2;
@@ -234,8 +235,8 @@ namespace SignalProm
             }
           
             cenabezPDV.Text = (cena * kol).ToString();
-            cenasaPDV.Text = (double.Parse(cenabezPDV.Text) * 17 / 100).ToString();
-            ukupnosaPDV.Text = (double.Parse(cenasaPDV.Text) + double.Parse(cenabezPDV.Text)).ToString();
+            cenasaPDV.Text = (double.Parse(cenabezPDV.Text) * 17 / 100).ToString("0.000");
+            ukupnosaPDV.Text = (double.Parse(cenasaPDV.Text) + double.Parse(cenabezPDV.Text)).ToString("0.000");
         }
     }
 }

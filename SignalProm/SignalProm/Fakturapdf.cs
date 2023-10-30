@@ -119,9 +119,9 @@ namespace SignalProm
                 PDV += double.Parse(dt.Cells[6].Value.ToString());
             }
 
-            label45.Text = sumabezPDV.ToString();
-            label47.Text = PDV.ToString();
-            label48.Text = sumasaPDV.ToString();
+            label45.Text = sumabezPDV.ToString("0.000");
+            label47.Text = PDV.ToString("0.000");
+            label48.Text = sumasaPDV.ToString("0.000");
 
         }
 
@@ -150,7 +150,7 @@ namespace SignalProm
                             Font infoFont = new Font(bf, 7);
                             Font mediumFont = new Font(bf, 12);
                             Font tenFont = new Font(bf, 10);
-                            System.Drawing.Image pImage = System.Drawing.Image.FromFile("C:\\Users\\miros\\OneDrive\\Radna površina\\anamarija.gif");
+                            System.Drawing.Image pImage = System.Drawing.Image.FromFile("C:\\Users\\Public\\signalPromE-faktura-main\\SignalProm\\SignalProm\\image\\logo.png");
                             iTextSharp.text.Image iTextImage = iTextSharp.text.Image.GetInstance(pImage, System.Drawing.Imaging.ImageFormat.Gif);
                             iTextImage.Alignment = Element.ALIGN_LEFT;
                             iTextImage.ScaleAbsolute(100f, 100f);
@@ -472,19 +472,19 @@ namespace SignalProm
                                 ts5.Font.Size = 7;
 
 
-                                t6 = (double.Parse(lista2[i].Cena) * double.Parse(lista2[i].Kol)).ToString();
+                                t6 = (double.Parse(lista2[i].Cena) * double.Parse(lista2[i].Kol)).ToString("0.000");
                                 Paragraph ts6 = new Paragraph(t6);
                                 ts6.Alignment = Element.ALIGN_CENTER;
                                 ts6.Font.Size = 7;
 
 
-                                t7 = ((double.Parse(lista2[i].Cena) * double.Parse(lista2[i].Kol)) * 17 / 100).ToString();
+                                t7 = ((double.Parse(lista2[i].Cena) * double.Parse(lista2[i].Kol)) * 17 / 100).ToString("0.000");
                                 Paragraph ts7 = new Paragraph(t7);
                                 ts7.Alignment = Element.ALIGN_CENTER;
                                 ts7.Font.Size = 7;
 
 
-                                t8 = (((double.Parse(lista2[i].Cena) * double.Parse(lista2[i].Kol)) * 17 / 100) + (double.Parse(lista2[i].Cena) * double.Parse(lista2[i].Kol))).ToString();
+                                t8 = (((double.Parse(lista2[i].Cena) * double.Parse(lista2[i].Kol)) * 17 / 100) + (double.Parse(lista2[i].Cena) * double.Parse(lista2[i].Kol))).ToString("0.000");
                                 Paragraph ts8 = new Paragraph(t8);
                                 ts8.Alignment = Element.ALIGN_CENTER;
                                 ts8.Font.Size = 7;
@@ -670,6 +670,10 @@ namespace SignalProm
 
         }
 
+        private void label45_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

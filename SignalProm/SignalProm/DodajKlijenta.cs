@@ -36,7 +36,7 @@ namespace SignalProm
             else
             {
 
-                SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+                SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Public\\signalPromE-faktura-main\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
                 con.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO klijent VALUES(@ime,@adresa,@pib,@racun,@tel,@faks)", con);
 
@@ -68,7 +68,7 @@ namespace SignalProm
 
         private void DodajKlijenta_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Public\\signalPromE-faktura-main\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
             SqlCommand cmd = new SqlCommand("SELECT imeKlijent,adresaKlijent,PIBKlijent,racunKlijent,telKlijent,faksKlijent FROM klijent", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -96,7 +96,7 @@ namespace SignalProm
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Public\\signalPromE-faktura-main\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
             if (e.ColumnIndex == 6) {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
                 if (MessageBox.Show(string.Format("Da li želite da izbrišete ovaj red?", row.Cells[2].Value), "Potvrda", MessageBoxButtons.YesNo) == DialogResult.Yes)

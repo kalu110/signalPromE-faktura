@@ -23,7 +23,9 @@ namespace SignalProm
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Public\\signalPromE-faktura-main\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+
+
             SqlCommand cmd = new SqlCommand("SELECT imeKlijent,adresaKlijent,PIBKlijent,racunKlijent,telKlijent,faksKlijent FROM klijent", con);
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
@@ -46,7 +48,8 @@ namespace SignalProm
 
         public  void MyCodes(object sender,FormClosingEventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\miros\\source\\repos\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Public\\signalPromE-faktura-main\\SignalProm\\SignalProm\\signalprom.mdf;Integrated Security=True");
+
             SqlCommand cmd = new SqlCommand("SELECT imeKlijent,adresaKlijent,PIBKlijent,racunKlijent,telKlijent,faksKlijent FROM klijent", con);
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
